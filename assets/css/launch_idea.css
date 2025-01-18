@@ -1,0 +1,257 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  background-image: url(../images/inside.jpg);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #007BFF;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin: 10px 0 0;
+}
+
+section {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #CFD3D7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+.submission {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.submission h3 {
+  margin-top: 0;
+}
+
+.status-pending {
+  color: orange;
+}
+
+.status-approved {
+  color: green;
+}
+
+.status-rejected {
+  color: red;
+}
+
+
+#submissions-section button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#submissions-section button:hover {
+  background-color: #0056b3;
+}
+
+/*
+.resource-card {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.resource-card h3 {
+    margin-top: 0;
+}
+
+.resource-card a {
+    display: block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.resource-card a:hover {
+    text-decoration: underline;
+}
+*/
+.hidden {
+  display: none;
+}
+
+.resources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.resources a {
+  text-decoration: none;
+  color: #0056b3;
+  font-weight: 600;
+}
+
+.resource-card1,
+.resource-card2,
+.resource-card3,
+.resource-card4 {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  margin-left: 1rem;
+  width: 13rem;
+  height: auto;
+}
+
+.resource-card1 h4,
+.resource-card2 h4,
+.resource-card3 h4,
+.resource-card4 h4 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.resource-card1 h4 a,
+.resource-card2 h4 a,
+.resource-card3 h4 a,
+.resource-card4 h4 a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.resource-card1 p,
+.resource-card2 p,
+.resource-card3 p,
+.resource-card4 p {
+  font-size: 14px;
+  color: #777;
+}
+
+.resource-card1:hover,
+.resource-card2:hover,
+.resource-card3:hover,
+.resource-card4:hover {
+  background: #12e4f3;
+  color: #fff;
+  transform: translateY(-5px);
+  background-image: url(../images/service-bg.jpg);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.resource-card1:hover h4 a,
+.resource-card2:hover h4 a,
+.resource-card1:hover a,
+.resource-card2:hover a,
+.resource-card3:hover h4 a,
+.resource-card4:hover h4 a,
+.resource-card3:hover a,
+.resource-card4:hover a {
+  color: #fff !important;
+}
+
+.resource-card1:hover p,
+.resource-card2:hover p,
+.resource-card3:hover p,
+.resource-card4:hover p {
+  color: #fff !important;
+}
+
+.main-back{
+  margin-left:2.5rem ;
+  margin-bottom: -1.5rem;
+}
+
+.main-back button {
+  padding: 0.5em 1em;
+  margin: 0 0.5em;
+  height: 2rem;
+  background-color: #4b8ef1;
+  border: none;
+  border-radius: 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.95rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-decoration: none; /* added */
+  color: #4b8ef1; /* changed */
+  transition: background-color 0.3s, color 0.3s; /* added */
+}
+
+.main-back button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-back :hover{
+  background-color: #0056b3;
+  transform: scale(1.01);
+}

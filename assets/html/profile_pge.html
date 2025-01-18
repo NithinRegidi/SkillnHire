@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - SkillNhire</title>
+    <link rel="stylesheet" href="/assets/css/profile_page.css">
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="/assets/images/client-image-2.png" alt="Profile Picture" class="profile-pic" id="profile-pic">
+            <h1 class="profile-name" id="profile-name">John Doe</h1>
+            <p class="profile-title" id="profile-title">Software Engineer</p>
+            <div class="editButton">
+                <button id="edit-btn" onclick="enableEditing()" style="background-color: #fff;">Edit Profile</button>
+                <button id="save-btn" onclick="saveProfile()" style="background-color: #fff; display: none;">Save Profile</button>
+            </div>
+        </div>
+
+        <div class="main-back">
+            <button><a href="/index.html">Back to home</a></button>
+        </div>
+
+        <div class="profile-content" id="profile-content">
+            <div class="profile-section" id="personal-info">
+                <h2>Personal Information</h2>
+                <p><b>Full Name:</b> <span id="full-name">John Doe</span></p>
+                <p><b>Email Address:</b> <span id="email-address">john.doe@example.com</span></p>
+                <p><b>Phone Number:</b> <span id="phone-number">+1234567890</span></p>
+                <p><b>Date of Birth:</b> <span id="dob">January 1, 1990</span></p>
+                <p><b>Gender:</b> <span id="gender">Male</span></p>
+                <p><b>Current Location:</b> <span id="current-location">Bangalore, India</span></p>
+            </div>
+            <!-- Repeat for other sections -->
+            <div class="profile-section" id="education">
+                <h2>Education</h2>
+                <p><b>Highest Degree Obtained:</b> <span id="degree">Bachelor of Technology</span></p>
+                <p><b>School/University Name:</b> <span id="school-name">Indian Institute of Technology</span></p>
+                <p><b>Graduation Year:</b> <span id="graduation-year">2012</span></p>
+                <p><b>Major/Specialization:</b> <span id="major">Computer Science</span></p>
+                <p><b>GPA/Percentage:</b> <span id="gpa">8.5/10</span></p>
+            </div>
+            
+            <div class="profile-section" id="work-experience">
+                <h2>Work Experience</h2>
+                <p><b>Job Title:</b> <span id="job-title">Software Engineer</span></p>
+                <p><b>Company Name:</b> <span id="company-name">Google</span></p>
+                <p><b>Start and End Dates:</b> <span id="employment-dates">June 2015 - Present</span></p>
+                <p><b>Job Description:</b> <span id="job-description">Developing and maintaining web applications.</span></p>
+                <p><b>Achievements and Contributions:</b> <span id="achievements">Improved application performance by 30%.</span></p>
+            </div>
+            
+            <div class="profile-section" id="skills">
+                <h2>Skills</h2>
+                <p><b>Technical Skills:</b> <span id="technical-skills">JavaScript, React, Node.js, Python</span></p>
+                <p><b>Soft Skills:</b> <span id="soft-skills">Communication, Teamwork, Problem-solving</span></p>
+            </div>
+            
+            <div class="profile-section" id="certifications">
+                <h2>Certifications and Licenses</h2>
+                <p><b>Certification Name:</b> <span id="certification-name">Certified Java Developer</span></p>
+                <p><b>Issuing Organization:</b> <span id="certification-organization">Oracle</span></p>
+                <p><b>Year Received:</b> <span id="certification-year">2014</span></p>
+            </div>
+            
+            <div class="profile-section" id="projects">
+                <h2>Projects</h2>
+                <p><b>Project Title:</b> <span id="project-title">Web Application Development</span></p>
+                <p><b>Project Description:</b> <span id="project-description">Developed a full-stack web application.</span></p>
+                <p><b>Technologies Used:</b> <span id="technologies-used">React, Node.js, MongoDB</span></p>
+                <p><b>Role and Responsibilities:</b> <span id="role-responsibilities">Lead Developer</span></p>
+                <p><b>Project Duration:</b> <span id="project-duration">6 months</span></p>
+            </div>
+            
+            <div class="profile-section" id="achievements">
+                <h2>Achievements and Awards</h2>
+                <p><b>Award Name:</b> <span id="award-name">Best Developer Award</span></p>
+                <p><b>Issuing Organization:</b> <span id="award-organization">Google</span></p>
+                <p><b>Year Received:</b> <span id="award-year">2018</span></p>
+                <p><b>Description:</b> <span id="award-description">Awarded for outstanding performance in project development.</span></p>
+            </div>
+            
+            <div class="profile-section" id="portfolio">
+                <h2>Portfolio</h2>
+                <p><b>Personal Website:</b> <a href="https://www.johndoe.com" target="_blank"><span id="personal-website">www.johndoe.com</span></a></p>
+                <p><b>GitHub:</b> <a href="https://github.com/johndoe" target="_blank"><span id="github">github.com/johndoe</span></a></p>
+                <p><b>LinkedIn:</b> <a href="https://linkedin.com/in/johndoe" target="_blank"><span id="linkedin">linkedin.com/in/johndoe</span></a></p>
+            </div>
+            
+            <div class="profile-section" id="preferences">
+                <h2>Preferences</h2>
+                <p><b>Job Type:</b> <span id="job-type">Full-time</span></p>
+                <p><b>Work Location Preferences:</b> <span id="work-location">Bangalore, India</span></p>
+                <p><b>Salary Expectations:</b> <span id="salary-expectations">₹15,00,000 per annum</span></p>
+                <p><b>Start Date Availability:</b> <span id="start-date">Immediately</span></p>
+            </div>
+            
+            <div class="profile-section" id="additional-information">
+                <h2>Additional Information</h2>
+                <p><b>Summary/Bio:</b> <span id="bio">A passionate software engineer with 5 years of experience in web development.</span></p>
+                <p><b>Hobbies and Interests:</b> <span id="hobbies-interests">Coding, Reading, Traveling</span></p>
+                <p><b>References:</b> <span id="references">Available upon request</span></p>
+            </div>
+    </div>
+    <script src="/assets/js/profile_page.js"></script>
+</body>
+</html>

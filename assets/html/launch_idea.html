@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launch Your Idea - SkillNhire</title>
+    <link rel="stylesheet" href="/assets/css/launch_idea.css">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Launch Your Idea</h1>
+            <p>Submit your innovative ideas and get expert guidance and resources.</p>
+<!--
+            <div class="main-back">
+                <button><a href="/index.html">Back to home</a></button>
+            </div>
+            -->
+        </header>
+
+        <section id="idea-form-section">
+            <h2>Submit Your Idea</h2>
+            <form id="idea-form">
+                <label for="idea-title">Idea Title:</label>
+                <input type="text" id="idea-title" name="idea-title" required>
+
+                <label for="idea-description">Description of the Idea:</label>
+                <textarea id="idea-description" name="idea-description" required></textarea>
+
+                <label for="target-market">Target Market:</label>
+                <input type="text" id="target-market" name="target-market" required>
+
+                <label for="usp">Unique Selling Proposition (USP):</label>
+                <input type="text" id="usp" name="usp" required>
+
+                <label for="industry">Industry:</label>
+                <select id="industry" name="industry" required>
+                    <option value="">Select Industry</option>
+                    <option value="tech">Technology</option>
+                    <option value="health">Healthcare</option>
+                    <option value="finance">Finance</option>
+                    <option value="education">Education</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="stage">Development Stage:</label>
+                <select id="stage" name="stage" required>
+                    <option value="">Select Stage</option>
+                    <option value="concept">Concept</option>
+                    <option value="prototype">Prototype</option>
+                    <option value="market-ready">Market-Ready</option>
+                </select>
+
+                <button type="submit">Submit Idea</button>
+            </form>
+        </section>
+
+        <section id="submissions-section">
+            <h2>My Submissions</h2>
+            <button onclick="viewSubmissions()">View My Submissions</button>
+            <div id="submissions-list" class="hidden">
+                <!-- Submissions will be dynamically loaded here -->
+            </div>
+            <button onclick="hideSubmissions()" class="hidden">Back</button>
+        </section>
+
+        <section id="resources-section">
+            <h2>Resources and Guidance</h2>
+            <div class="resources">
+                <div class="resource-card1">
+                    <h3>Business Planning</h3>
+                    <p>Get access to business planning guides and templates.</p>
+                    <a href="https://blog.hubspot.com/marketing/what-is-business-plan">Learn More <i class="fa fa-arrow-right"></i></a>
+                </div>
+                <div class="resource-card2">
+                    <h3>Market Research</h3>
+                    <p>Explore market research tools and resources.</p>
+                    <a href="https://blog.hubspot.com/marketing/market-research-tools-resources">Learn More <i class="fa fa-arrow-right"></i></a>
+                </div>
+                <div class="resource-card3">
+                    <h3>Funding Options</h3>
+                    <p>Discover funding opportunities and platforms.</p>
+                    <a href="https://www.startupindia.gov.in/content/sih/en/funding.html">Learn More <i class="fa fa-arrow-right"></i></a>
+                </div>
+                <div class="resource-card4">
+                    <h3>Mentorship and Coaching</h3>
+                    <p>Connect with mentors and coaches to refine your idea.</p>
+                    <a href="https://www.thepowerscompany.com/resources/mentorship-and-coaching/">Learn More <i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="/assets/js/launch_idea.js"></script>
+</body>
+</html>

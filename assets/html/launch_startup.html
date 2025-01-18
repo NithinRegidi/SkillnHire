@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launch Your Startup - SkillNhire</title>
+    <link rel="stylesheet" href="/assets/css/launch_startup.css">
+
+    <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Launch Your Startup</h1>
+            <p>Submit your startup idea and find investors, partners, and resources.</p>
+        </header>
+
+        <section id="startup-form-section">
+            <h2>Submit Your Startup</h2>
+            <form id="startup-form">
+                <label for="business-name">Business Name:</label>
+                <input type="text" id="business-name" name="business-name" required>
+
+                <label for="business-description">Description of the Business:</label>
+                <textarea id="business-description" name="business-description" required></textarea>
+
+                <label for="development-stage">Current Stage of Development:</label>
+                <select id="development-stage" name="development-stage" required>
+                    <option value="">Select Stage</option>
+                    <option value="concept">Concept</option>
+                    <option value="prototype">Prototype</option>
+                    <option value="market-ready">Market-Ready</option>
+                </select>
+
+                <label for="capital-required">Capital Required (USD):</label>
+                <input type="number" id="capital-required" name="capital-required" required>
+
+                <label for="skills-needed">Skills and Expertise Needed:</label>
+                <textarea id="skills-needed" name="skills-needed" required></textarea>
+
+                <label for="industry">Industry:</label>
+                <select id="industry" name="industry" required>
+                    <option value="">Select Industry</option>
+                    <option value="tech">Technology</option>
+                    <option value="health">Healthcare</option>
+                    <option value="finance">Finance</option>
+                    <option value="education">Education</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="timeline">Expected Timeline for Launch:</label>
+                <input type="text" id="timeline" name="timeline" required>
+
+                <label for="team-size">Current Team Size:</label>
+                <input type="number" id="team-size" name="team-size" required>
+
+                <label for="market-strategy">Go-to-Market Strategy:</label>
+                <textarea id="market-strategy" name="market-strategy" required></textarea>
+
+                <label for="additional-resources">Additional Resources Needed:</label>
+                <textarea id="additional-resources" name="additional-resources"></textarea>
+
+                <button type="submit">Submit Startup</button>
+            </form>
+        </section>
+
+        <section id="submissions-section">
+            <h2>My Submissions</h2>
+            <button onclick="viewSubmissions()">View My Submissions</button>
+            <div id="submissions-list" class="hidden">
+                <!-- Submissions will be dynamically loaded here -->
+            </div>
+            <button onclick="hideSubmissions()" class="hidden">Back</button>
+        </section>
+<!--
+        <section id="resources-section">
+            <h2>Resources and Guidance</h2>
+            <div class="support-options">
+                <div class="support-card">
+                    <h3>Business Planning</h3>
+                    <p>Access business planning guides and templates.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="support-card">
+                    <h3>Market Research</h3>
+                    <p>Explore market research tools and resources.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="support-card">
+                    <h3>Funding Options</h3>
+                    <p>Discover funding opportunities and platforms.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="support-card">
+                    <h3>Mentorship and Coaching</h3>
+                    <p>Connect with mentors and coaches to refine your idea.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="support-card">
+                    <h3>Networking Events</h3>
+                    <p>Join networking events to meet potential partners and investors.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </section>
+    </div>
+-->
+    <section id="support-section">
+        <h2>Support and Resources</h2>
+        <div class="support-options">
+            <div class="support-card1">
+                <h3>Business Planning</h3>
+                <p>Get assistance in developing your business plan.</p>
+                <a href="https://blog.hubspot.com/marketing/what-is-business-plan">Learn More <i class="fa fa-arrow-right"></i></a>
+            </div>
+            <div class="support-card2">
+                <h3>Fundraising</h3>
+                <p>Explore funding options and strategies.</p>
+                <a href="https://www.startupindia.gov.in/content/sih/en/funding.html">Learn More <i class="fa fa-arrow-right"></i></a>
+            </div>
+            <div class="support-card3">
+                <h3>Hiring</h3>
+                <p>Find skilled employees to join your startup.</p>
+                <a href="https://humanresource.com/how-to-hire-employees-for-your-startup/">Learn More <i class="fa fa-arrow-right"></i></a>
+            </div>
+            <div class="support-card4">
+                <h3>Mentorship and Networking</h3>
+                <p>Connect with mentors and networking opportunities.</p>
+                <a href="https://www.thepowerscompany.com/resources/mentorship-and-coaching/">Learn More <i class="fa fa-arrow-right"></i></a>
+            </div>
+            <div class="support-card5">
+                <h3>Legal Advice</h3>
+                <p>Consult with legal experts on business structures.</p>
+                <a href="https://www.fiverr.com/resources/guides/business/legal-consultation-startups">Learn More <i class="fa fa-arrow-right"></i></a>
+            </div>
+            <div class="support-card6">
+                <h3>Marketing Strategy</h3>
+                <p>Develop a comprehensive marketing strategy.</p>
+                <a href="https://blog.hubspot.com/marketing/market-research-tools-resources">Learn More <i class="fa fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="/assets/js/launch_startup.js"></script>
+</body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get into StartUp's</title>
+    <link rel="stylesheet" href="/assets/css/get_into_startup.css">
+</head>
+<body>
+    <header>
+        <h1>Explore Job & Internship Opportunities in StartUp's</h1>
+    </header>
+
+    <section class="tabs">
+        <button class="tab-button active" onclick="showTab('jobs')">Jobs</button>
+        <button class="tab-button" onclick="showTab('internships')">Internships</button>
+        <button class="tab-button" onclick="showTab('startups')">Startups</button>
+    </section>
+
+    <div class="main-back">
+        <button><a href="/index.html">Back to home</a></button>
+    </div>
+
+    <section id="jobs" class="tab-content active">
+        <h2>Job Listings</h2>
+        <!-- Job listings content here -->
+        <div class="filters">
+            <h3>Filter Job Listings</h3>
+            <form id="filter-form-job">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location">
+                
+                <label for="industry">Industry:</label>
+                <input type="text" id="industry" name="industry">
+                
+                <label for="job-type">Job Type:</label>
+                <input type="text" id="job-type" name="job-type">
+                
+                <button type="submit">Apply Filters</button>
+            </form>
+        </div>
+        <div class="job-listings">
+            <div class="job-card">
+                <h3>Software Engineer</h3>
+                <p><b>Location:</b> Bangalore, India</p>
+                <p><b>Company:</b> Flipkart</p>
+                <p><b>Job Type:</b> Full-time</p>
+                <p><b>Salary:</b> ₹15,00,000 - ₹20,00,000 per annum</p>
+                <button onclick="viewDetails('Software Engineer')">View Details</button>
+            </div>
+            
+            <div class="job-card">
+                <h3>Product Manager</h3>
+                <p><b>Location:</b> Gurgaon, India</p>
+                <p><b>Company:</b> Zomato</p>
+                <p><b>Job Type:</b> Full-time</p>
+                <p><b>Salary:</b> ₹18,00,000 - ₹25,00,000 per annum</p>
+                <button onclick="viewDetails('Product Manager')">View Details</button>
+            </div>
+            
+            <div class="job-card">
+                <h3>Data Scientist</h3>
+                <p><b>Location:</b> Hyderabad, India</p>
+                <p><b>Company:</b> Swiggy</p>
+                <p><b>Job Type:</b> Full-time</p>
+                <p><b>Salary:</b> ₹20,00,000 - ₹28,00,000 per annum</p>
+                <button onclick="viewDetails('Data Scientist')">View Details</button>
+            </div>
+            
+            <div class="job-card">
+                <h3>Mobile Developer</h3>
+                <p><b>Location:</b> Pune, India</p>
+                <p><b>Company:</b> Paytm</p>
+                <p><b>Job Type:</b> Full-time</p>
+                <p><b>Salary:</b> ₹12,00,000 - ₹18,00,000 per annum</p>
+                <button onclick="viewDetails('Mobile Developer')">View Details</button>
+            </div>
+            
+            <div class="job-card">
+                <h3>DevOps Engineer</h3>
+                <p><b>Location:</b> Bangalore, India</p>
+                <p><b>Company:</b> Ola</p>
+                <p><b>Job Type:</b> Full-time</p>
+                <p><b>Salary:</b> ₹14,00,000 - ₹20,00,000 per annum</p>
+                <button onclick="viewDetails('DevOps Engineer')">View Details</button>
+            </div>
+            
+            <div class="job-card">
+                <h3>Frontend Developer</h3>
+                <p><b>Location:</b> Mumbai, India</p>
+                <p><b>Company:</b> Byju's</p>
+                <p><b>Job Type:</b> Full-time</p>
+                <p><b>Salary:</b> ₹10,00,000 - ₹15,00,000 per annum</p>
+                <button onclick="viewDetails('Frontend Developer')">View Details</button>
+            </div>
+            
+            <div class="job-card">
+                <h3>Backend Developer</h3>
+                <p><b>Location:</b> Noida, India</p>
+                <p><b>Company:</b> Unacademy</p>
+                <p><b>Job Type:</b> Full-time</p>
+                <p><b>Salary:</b> ₹12,00,000 - ₹18,00,000 per annum</p>
+                <button onclick="viewDetails('Backend Developer')">View Details</button>
+            </div>
+            
+            <div class="job-card">
+                <h3>AI Engineer</h3>
+                <p><b>Location:</b> Bangalore, India</p>
+                <p><b>Company:</b> Razorpay</p>
+                <p><b>Job Type:</b> Full-time</p>
+                <p><b>Salary:</b> ₹22,00,000 - ₹30,00,000 per annum</p>
+                <button onclick="viewDetails('AI Engineer')">View Details</button>
+            </div>
+            
+            <div class="job-card">
+                <h3>Cybersecurity Analyst</h3>
+                <p><b>Location:</b> Chennai, India</p>
+                <p><b>Company:</b> Freshworks</p>
+                <p><b>Job Type:</b> Full-time</p>
+                <p><b>Salary:</b> ₹14,00,000 - ₹22,00,000 per annum</p>
+                <button onclick="viewDetails('Cybersecurity Analyst')">View Details</button>
+            </div>
+            
+            <div class="job-card">
+                <h3>Blockchain Developer</h3>
+                <p><b>Location:</b> Mumbai, India</p>
+                <p><b>Company:</b> CoinDCX</p>
+                <p><b>Job Type:</b> Full-time</p>
+                <p><b>Salary:</b> ₹16,00,000 - ₹24,00,000 per annum</p>
+                <button onclick="viewDetails('Blockchain Developer')">View Details</button>
+            </div>
+            
+            <div id="no-results-message-job" style="display: none;">
+                <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: 600;">No job opportunities match your criteria.</p>
+            </div>
+
+
+            <!-- Repeat for more job listings -->
+        </div>
+    </section>
+
+    <section id="internships" class="tab-content">
+        <h2>Internship Opportunities</h2>
+        <!-- Internship listings content here -->
+        <div class="filters">
+            <h3>Filter Internship Listings</h3>
+            <form id="filter-form-internship">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location">
+                
+                <label for="industry">Industry:</label>
+                <input type="text" id="industry" name="industry">
+                
+                <label for="job-type">Job Type:</label>
+                <input type="text" id="job-type" name="job-type">
+                
+                <button type="submit">Apply Filters</button>
+            </form>
+        </div>
+        <div class="internship-listings">
+            <div class="internship-card">
+                <h3>Marketing Intern</h3>
+                <p><b>Location:</b> Bangalore, India</p>
+                <p><b>Company:</b> Zerodha</p>
+                <p><b>Job Type:</b> Full-time</p>
+                <p><b>Stipend:</b> ₹20,000 - ₹25,000 per month</p>
+                <button onclick="viewDetails('Marketing Intern')">View Details</button>
+            </div>
+            
+            <div class="internship-card">
+                <h3>Data Analyst Intern</h3>
+                <p><b>Location:</b> Hyderabad, India</p>
+                <p><b>Company:</b> Swiggy</p>
+                <p><b>Job Type:</b> Part-time</p>
+                <p><b>Stipend:</b> ₹15,000 - ₹20,000 per month</p>
+                <button onclick="viewDetails('Data Analyst Intern')">View Details</button>
+            </div>
+            
+            <div class="internship-card">
+                <h3>Content Writer Intern</h3>
+                <p><b>Location:</b> Mumbai, India</p>
+                <p><b>Company:</b> Unacademy</p>
+                <p><b>Job Type:</b> Full-time</p>
+                <p><b>Stipend:</b> ₹10,000 - ₹15,000 per month</p>
+                <button onclick="viewDetails('Content Writer Intern')">View Details</button>
+            </div>
+            
+            <div class="internship-card">
+                <h3>Graphic Design Intern</h3>
+                <p><b>Location:</b> Chennai, India</p>
+                <p><b>Company:</b> Freshworks</p>
+                <p><b>Job Type:</b> Part-time</p>
+                <p><b>Stipend:</b> ₹12,000 - ₹18,000 per month</p>
+                <button onclick="viewDetails('Graphic Design Intern')">View Details</button>
+            </div>
+            
+            <div class="internship-card">
+                <h3>Software Development Intern</h3>
+                <p><b>Location:</b> Pune, India</p>
+                <p><b>Company:</b> Razorpay</p>
+                <p><b>Job Type:</b> Full-time</p>
+                <p><b>Stipend:</b> ₹25,000 - ₹30,000 per month</p>
+                <button onclick="viewDetails('Software Development Intern')">View Details</button>
+            </div>
+            
+            <div class="internship-card">
+                <h3>Business Development Intern</h3>
+                <p><b>Location:</b> Gurgaon, India</p>
+                <p><b>Company:</b> UrbanClap</p>
+                <p><b>Job Type:</b> Part-time</p>
+                <p><b>Stipend:</b> ₹18,000 - ₹22,000 per month</p>
+                <button onclick="viewDetails('Business Development Intern')">View Details</button>
+            </div>
+            
+            <div class="internship-card">
+                <h3>HR Intern</h3>
+                <p><b>Location:</b> Noida, India</p>
+                <p><b>Company:</b> Paytm</p>
+                <p><b>Job Type:</b> Full-time</p>
+                <p><b>Stipend:</b> ₹15,000 - ₹20,000 per month</p>
+                <button onclick="viewDetails('HR Intern')">View Details</button>
+            </div>
+            
+            <div class="internship-card">
+                <h3>Operations Intern</h3>
+                <p><b>Location:</b> Kolkata, India</p>
+                <p><b>Company:</b> Lenskart</p>
+                <p><b>Job Type:</b> Part-time</p>
+                <p><b>Stipend:</b> ₹10,000 - ₹15,000 per month</p>
+                <button onclick="viewDetails('Operations Intern')">View Details</button>
+            </div>
+            
+            <div class="internship-card">
+                <h3>UI/UX Design Intern</h3>
+                <p><b>Location:</b> Jaipur, India</p>
+                <p><b>Company:</b> Zomato</p>
+                <p><b>Job Type:</b> Full-time</p>
+                <p><b>Stipend:</b> ₹20,000 - ₹25,000 per month</p>
+                <button onclick="viewDetails('UI/UX Design Intern')">View Details</button>
+            </div>
+            
+            <div class="internship-card">
+                <h3>Finance Intern</h3>
+                <p><b>Location:</b> Ahmedabad, India</p>
+                <p><b>Company:</b> Cred</p>
+                <p><b>Job Type:</b> Part-time</p>
+                <p><b>Stipend:</b> ₹15,000 - ₹20,000 per month</p>
+                <button onclick="viewDetails('Finance Intern')">View Details</button>
+            </div>
+            
+            <div id="no-results-message-internship" style="display: none;">
+                <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: 600;">No internship opportunities match your criteria.</p>
+            </div>
+            
+            <!-- Repeat for more internship listings -->
+        </div>
+    </section>
+
+    <section id="startups" class="tab-content">
+        <h2>Startup Opportunities</h2>
+        <section class="startup-categories">
+            <button class="category-button active" onclick="showStartupCategory('established')">Established Startups</button>
+            <button class="category-button" onclick="showStartupCategory('new')">New Startups</button>
+        </section>
+
+        <section id="established" class="startup-content active">
+            <h3>Established Startups</h3>
+            <div class="filters">
+                <h4>Filter Startup Listings</h4>
+                <form id="filter-form-established">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location">
+                    
+                    <label for="industry">Industry:</label>
+                    <input type="text" id="industry" name="industry">
+                    <!--<select id="industry" name="industry" required>
+                        <option value="">Select Industry</option>
+                        <option value="tech">Technology</option>
+                        <option value="health">Healthcare</option>
+                        <option value="finance">Finance</option>
+                        <option value="education">Education</option>
+                        <option value="environmental">Environmental</option>
+                        <option value="other">Other</option>
+                    </select>-->
+                    <label for="stage">Stage of Development:</label>
+                    <input type="text" id="stage" name="stage">
+                    
+                    <button type="submit">Apply Filters</button>
+                </form>
+            </div>
+            <div class="startup-listings">
+                <div class="startup-card">
+                    <h4>HealthMate <img src="/assets/images/verify.png" alt=""></h4>
+                    <p><b>Industry: </b>Health</p>
+                    <p><b>Location: </b>Bangalore, India</p>
+                    <p><b>Growth: </b>30%</p>
+                    <p><b>Angel Investors: </b>Sequoia Capital</p>
+                    <p><b>Stage: </b>Established</p>
+                    <button onclick="viewStartupDetails('HealthMate')">View Details</button>
+                </div>
+                
+                <div class="startup-card">
+                    <h4>TechNexus <img src="/assets/images/verify.png" alt=""></h4>
+                    <p><b>Industry: </b>Technology</p>
+                    <p><b>Location: </b>San Francisco, USA</p>
+                    <p><b>Growth: </b>50%</p>
+                    <p><b>Angel Investors: </b>Y Combinator</p>
+                    <p><b>Stage: </b>Established</p>
+                    <button onclick="viewStartupDetails('TechNexus')">View Details</button>
+                </div>
+                
+                <div class="startup-card">
+                    <h4>EcoSolutions <img src="/assets/images/verify.png" alt=""></h4>
+                    <p><b>Industry: </b>Environmental</p>
+                    <p><b>Location: </b>Mumbai, India</p>
+                    <p><b>Growth: </b>40%</p>
+                    <p><b>Angel Investors: </b>Accel Partners</p>
+                    <p><b>Stage: </b>Established</p>
+                    <button onclick="viewStartupDetails('EcoSolutions')">View Details</button>
+                </div>
+
+                <div id="no-results-message-established" style="display: none;">
+                    <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: 600;">No Established Company opportunities match your criteria.</p>
+                </div>
+
+                <!-- Repeat for more startup listings -->
+            </div>
+        </section>
+
+        <section id="new" class="startup-content">
+            <h3>New Startups</h3>
+            <div class="filters">
+                <h4>Filter Startup Listings</h4>
+                <form id="filter-form-new">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location">
+                    
+                    <label for="industry">Industry:</label>
+                    <input type="text" id="industry" name="industry">
+                    
+                    <label for="stage">Stage of Development:</label>
+                    <input type="text" id="stage" name="stage">
+                    
+                    <button type="submit">Apply Filters</button>
+                </form>
+            </div>
+            <div class="startup-listings">
+                <div class="startup-card">
+                    <h4>FoodTech <img src="/assets/images/approved.png" alt=""></h4>
+                    <p><b>Industry: </b>Food Technology</p>
+                    <p><b>Location: </b>New York City, USA</p>
+                    <p><b>Growth: </b>35%</p>
+                    <p><b>Angel Investors: </b>Andreessen Horowitz</p>
+                    <p><b>Stage: </b>New</p>
+                    <button onclick="viewNewStartupDetails('FoodTech')">View Details</button>
+                </div>
+                
+                <div class="startup-card">
+                    <h4>FinTech Solutions <img src="/assets/images/approved.png" alt=""></h4>
+                    <p><b>Industry: </b>Financial Technology</p>
+                    <p><b>Location: </b>London, UK</p>
+                    <p><b>Growth: </b>45%</p>
+                    <p><b>Angel Investors: </b>Kleiner Perkins</p>
+                    <p><b>Stage: </b>New</p>
+                    <button onclick="viewNewStartupDetails('FinTech Solutions')">View Details</button>
+                </div>
+                
+
+                <div id="no-results-message-new" style="display: none;">
+                    <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: 600;">No New Company opportunities match your criteria.</p>
+                </div>
+
+                <!-- Repeat for more startup listings -->
+            </div>
+        </section>
+    </section>
+
+    <section id="details" class="tab-content">
+        <h2>Details</h2>
+        <div id="details-content">
+            <!-- Job or internship details will be loaded here -->
+        </div>
+        <button onclick="goBack()">Back</button>
+    </section>
+
+    <script src="/assets/js/get_into_startup.js"></script>
+</body>
+</html>

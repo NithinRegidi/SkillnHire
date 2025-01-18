@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/inside.jpg);
+}
+
+.profile-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.profile-header {
+    background-color: #0073e6;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-name {
+    font-size: 28px;
+    margin: 0;
+}
+
+.profile-title {
+    font-size: 22px;
+    margin: 5px 0 0 0;
+}
+
+.profile-content {
+    padding: 20px;
+}
+
+.profile-section {
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #ccc;
+    border: 1px solid white;
+    border-radius: 1rem;
+    box-shadow: 0 0 10 15 black;
+    margin: 0.5rem;
+    padding: 2rem;
+    font-size: large;
+}
+
+.profile-section h2 {
+    font-size: 20px;
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+
+.profile-section p {
+    margin: 5px 0;
+}
+
+/* Add styles for the editable fields */
+.editable {
+    background-color: #f0f8ff;
+    border: 1px solid #0073e6;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.hidden {
+    display: none;
+}
+
+.editButton button{
+    font-size: 1.1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.2rem;
+    margin: 0.8rem;
+}
+
+.main-back {
+    margin-left: 2rem;
+    margin-bottom: -0.5rem;
+    margin-top: 1.5rem;
+}
+
+.main-back button {
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    height: 2rem;
+    background-color: rgb(75, 142, 241);
+    border: none;
+    border-radius: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.95rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none; /* added */
+    color: #4b8ef1; /* changed */
+    transition: background-color 0.3s, color 0.3s; /* added */
+}
+
+
+.main-back a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-back :hover{
+    background-color: rgb(0, 86, 179);
+    transform: scale(1.01);
+}
+

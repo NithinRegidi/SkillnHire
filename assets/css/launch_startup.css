@@ -1,0 +1,245 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  background-image: url(../images/inside.jpg);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #007BFF;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin: 10px 0 0;
+}
+
+section {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #cfd3d7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form textarea,
+form input[type="number"],
+form input[type="text"],
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+.support-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.support-options a {
+  text-decoration: none;
+  color: #0056b3;
+  font-weight: 600;
+}
+
+/*new code for the idea .support-card1 start*/
+
+.support-card1:hover,
+.support-card2:hover,
+.support-card3:hover,
+.support-card4:hover,
+.support-card5:hover,
+.support-card6:hover {
+  background-image: url(../images/service-bg.jpg);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.support-card1,
+.support-card2,
+.support-card3,
+.support-card4,
+.support-card5,
+.support-card6 {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  margin-left: 3rem;
+  width: 16rem;
+  height: auto;
+}
+
+.support-card1 h3,
+.support-card2 h3,
+.support-card3 h3,
+.support-card4 h3,
+.support-card5 h3,
+.support-card6 h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.support-card1 h3 a,
+.support-card2 h3 a,
+.support-card3 h3 a,
+.support-card4 h3 a,
+.support-card5 h3 a,
+.support-card6 h3 a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.support-card1 p,
+.support-card2 p,
+.support-card3 p,
+.support-card4 p,
+.support-card5 p,
+.support-card6 p {
+  font-size: 14px;
+  color: #777;
+}
+
+.support-card1:hover,
+.support-card2:hover,
+.support-card3:hover,
+.support-card4:hover,
+.support-card5:hover,
+.support-card6:hover {
+  background: #12e4f3;
+  color: #fff;
+  transform: translateY(-5px);
+  background-image: url(../images/service-bg.jpg);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.support-card1:hover h3,
+.support-card2:hover h3,
+.support-card3:hover h3,
+.support-card4:hover h3,
+.support-card5:hover h3,
+.support-card6:hover h3 {
+  color: #fff !important;
+}
+
+.support-card1:hover a,
+.support-card2:hover a,
+.support-card3:hover a,
+.support-card4:hover a,
+.support-card5:hover a,
+.support-card6:hover a {
+  color: #fff !important;
+}
+
+.support-card1:hover p,
+.support-card2:hover p,
+.support-card3:hover p,
+.support-card4:hover p,
+.support-card5:hover p,
+.support-card6:hover p {
+  color: #fff !important;
+}
+
+
+
+
+/* Additional styles for specific form elements */
+/* Additional styles for specific form elements */
+
+#timeline,
+#team-size,
+#market-strategy,
+#additional-resources {
+  resize: vertical;
+  /* Allow vertical resizing */
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.submission {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.submission h3 {
+  margin-top: 0;
+}
+
+.status-pending {
+  color: orange;
+}
+
+.status-approved {
+  color: green;
+}
+
+.status-rejected {
+  color: red;
+}
